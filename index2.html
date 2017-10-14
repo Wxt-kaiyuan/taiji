@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width:405px;
+            height:400px;
+            margin:5% auto;
+            /*background-color:#ccc;*/
+            position:relative;
+            transform:rotate(45deg);
+            -webkit-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            animation: rotate infinite linear 5s;
+            -webkit-animation: rotate infinite linear 5s;
+            -moz-animation:rotate infinite linear 5s;
+        }
+        .left{
+            width:200px;
+            height:400px;
+            background-color: #000;
+            border-radius:400px 0 0 400px;
+            float:left;
+        }
+        .right{
+            width:200px;
+            height:398px;
+            background-color:#fff;
+            border-radius:0 400px 400px 0;
+            float:left;
+            border:1px solid #ccc;
+        }
+        .top{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            background-color:#000;
+            position:absolute;
+            top:0;
+            left:100px;
+            z-index:88;
+        }
+        .bottom{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            background-color:#fff;
+            position:absolute;
+            top:200px;
+            left:100px;
+            z-index:88;
+        }
+        .a{
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background-color:#fff;
+            position:absolute;
+            top:75px;
+            left:75px;
+        }
+        .b{
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background-color:#000;
+            position:absolute;
+            top:75px;
+            left:75px;
+        }
+        @keyframes rotate{
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+            transform:rotate(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top"><div class="a"></div></div>
+    <div class="bottom"><div class="b"></div></div>
+
+</div>
+</body>
+</html>
